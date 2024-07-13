@@ -1,0 +1,45 @@
+:root {
+  // This is set up in an HSL format.
+  // The first digit is the HUE, or color
+  // The second digit is the Saturation, or how much color is in the color
+  // The third digit is the Lightness, or how light or dark the color is
+
+  // Neutrals
+  --color-background: 241 33% 99%; // #FAFAFC
+  --color-secondary-background: 241 22% 90%; // #DFDFEB
+  --color-text: 241 0% 2%; // #050505
+
+  // Link Colors
+  --color-link-primary: 241 68% 24%; // #161469
+  --color-link-highlight: 180 69% 23%; // #126161
+  --color-link-active: 256 68% 13%; // #170B38
+
+  // Highlight Colors
+  --color-highlight-primary: 241 77% 53%; // #302BE3
+  --color-highlight-highlight: 172 69% 50%; // #28D6C0
+  --color-highlight-active: 256 69% 51%; //#592BD9
+
+  // Gradient
+
+  --gradient-primary: linear-gradient(
+    45deg,
+    hsl(var(--color-link-highlight)),
+    hsl(var(--color-link-primary))
+  );
+
+  --gradient-hover: linear-gradient(
+    -45deg,
+    hsl(var(--color-link-highlight)),
+    hsl(var(--color-link-primary))
+  );
+}
+
+[data-theme='dark'] {
+  --color-background: 241 2% 6%; // #0F0F0F
+  --color-secondary-background: 241 2% 2%; // #050505
+  --color-text: 0 5% 96%; // #f5f4f4
+
+  --color-link-primary: 241 89% 73%; // #7F7CF7
+  --color-link-highlight: 172 78% 73%; // #86F0E2
+  --color-link-active: 256 83% 70%; // #9674F2
+}
